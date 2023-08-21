@@ -134,7 +134,7 @@ def trim_wav_by_segment_mp(
                 else:
                     raise
     else:
-        with Pool(processes=n_workers) as pool:
+        with Pool(processes=(n_workers+1)) as pool:
             for res in tqdm(pool.imap(ImapWrapper(trim_wav_by_segment), tasks, chunksize=chunksize), total=n):
                 fail_cnt += 1 - res
     print("[trim_wav_by_segment_mp]: Skipped: ", fail_cnt)
