@@ -59,7 +59,7 @@ def mel2wav(vocoder: BaseVocoder, mel_path, wav_path):
 
 if __name__ == "__main__":
     # ==================parameters==================
-    ckpt_path = "/kaggle/working/TTS-systems/tacotran2-step50000-ckpt"
+    ckpt_path = "/kaggle/input/tacotran2-step50000-ckpt"
     data_config = "/kaggle/working/TTS-systems/data_config/LJSpeech-1.1"
     input = "Deep learning is fun."
     spk = "103"  # "LJSpeech", "103"...
