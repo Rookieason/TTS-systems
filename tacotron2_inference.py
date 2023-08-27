@@ -62,7 +62,7 @@ if __name__ == "__main__":
     ckpt_path = "/kaggle/input/tacotran2-step50000-ckpt/epoch19-step50000.ckpt"
     data_config = "/kaggle/working/TTS-systems/data_config/LJSpeech-1.1"
     input = "Deep learning is fun."
-    spk = "103"  # "LJSpeech", "103"...
+    spk = "LJSpeech"  # "LJSpeech", "103"...
     
     output_img_path = "_temp/test.png"
     output_mel_path = "_temp/test.npy"
