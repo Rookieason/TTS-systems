@@ -122,7 +122,7 @@ def mel2wav(vocoder: BaseVocoder, mel_path, wav_path):
 if __name__ == "__main__":
     # ==================parameters==================
     ckpt_path = ""
-    data_config = "data_config/LJSpeech-1.1"
+    data_config = "/kaggle/working/data_config/LJSpeech-1.1"
     input = "Deep learning is fun."
     spk = "LJSpeech"  # "LJSpeech", "103", "SSB0005", "jsut", "kss"...
     control = {  # Control FastSpeech2
